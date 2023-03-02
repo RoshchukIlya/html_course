@@ -2,16 +2,16 @@
 <html lang="ru">
 
 <head>
-  <title>Книжный магазин Ogogo | Books</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книжный магазин Ogogo | Books</title>
   <link rel="icon"
     href="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
   <style>
     * {
-      margin: 0;
-      padding: 0;
+      /* margin: 0;
+      padding: 0; */
     }
 
     a {
@@ -26,19 +26,19 @@
 <body>
   <!-- Валидность/Семантика HTML -->
   <!-- Шапка сайта: -->
-  <header>
+  <header id="top">
     <img
       src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
       alt="Логотип сайта" loading="lazy" title="Логотип сайта" width="500px">
     <!-- Навигация: -->
     <nav>
-      <a href="#">
+      <a href="./index.html">
         <strong>О нас</strong>
       </a>
       <a href="#">
         <strong>Книги</strong>
       </a>
-      <a href="#">
+      <a href="./contacts.html">
         <strong>Контакты</strong>
       </a>
     </nav>
@@ -64,18 +64,61 @@
       <p>Lorem ipsum dolor sit.</p>
       <p>Lorem, ipsum dolor.</p>
     </details>
-    <table border="1px">
-      <th>
-      <td>Продукт</td>
-      <td>Цена</td>
-      <td>Наличие</td>
-      </th>
+    <hr>
+    <table border="1px" style="width: 500px">
       <tr>
-        <td>Гарри поттер</td>
+        <th>Продукт</th>
+        <th>Цена</th>
+        <th>Наличие</th>
+      </tr>
+      <tr>
+        <td>Гарри Поттер</td>
         <td>150 сом</td>
         <td>есть</td>
       </tr>
+      <tr>
+        <td>Властелин Колец</td>
+        <td>200 сом</td>
+        <td>под заказ</td>
+      </tr>
+      <tr>
+        <td>Пикник на обочине</td>
+        <td>100 сом</td>
+        <td>есть</td>
+      </tr>
+      <tr>
+        <td>Дарья Донцова</td>
+        <td>15 сом</td>
+        <td>нет</td>
+      </tr>
     </table>
+    <hr>
+
+    <section>
+      <!-- В этом теге нельзя использовать заголовки h1 -->
+      <h3>Отзывы</h3>
+      <!-- Список -->
+      <ul type="square">
+        <li>Круто!</li>
+        <li>like! Zbs!</li>
+        <li>Ваще огонь!!!</li>
+      </ul>
+      <hr>
+
+      <ol type="1">
+        <li>
+          <address>ул. Московская, дом 5</address>
+        </li>
+        <li>
+          <address>ул. Донецкая, дом 12</address>
+        </li>
+        <li>
+          <address>ул. Камская, дом 9/5</address>
+        </li>
+      </ol>
+      <hr>
+    </section>
+    <a href="#top">Наверх</a>
   </main>
   <!-- "подвал" сайта: -->
   <footer></footer>
